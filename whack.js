@@ -22,8 +22,18 @@
    * TODO
    * whacks the clicked bug and increments the score. The bug cannot be whacked again afterwards.
    */
-  function whackBug() {
-    // your code goes here
+  function whackBug(event) {
+    if(!event.currentTarget.classList.contains("whacked")) {
+      event.currentTarget.classList.add("whacked");
+      event.currentTarget.src = "bug-whacked.png";
+      let score = id("score");
+      let total = parseInt(score.textContent) + 1;
+      // Need to convert the string content into a number.
+      score.textContent = parseInt(score.textContent) + 1;
+      if (total === 24) {
+        qs("#game p").textContent = "You have whacked all bugs";
+      }
+    }
   }
 
 /* --- CSE 154 HELPER FUNCTIONS --- */
