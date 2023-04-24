@@ -36,7 +36,7 @@
     }
   }
 
-/* --- CSE 154 HELPER FUNCTIONS --- */
+/* --- HELPER FUNCTIONS --- */
 
   /**
    * Returns the element that has the ID attribute with the specified value.
