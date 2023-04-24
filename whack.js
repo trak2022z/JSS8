@@ -14,7 +14,7 @@
   function init() {
     let bugs = qsa("#bug-container img");
     for(let i = 0; i < bugs.length; i++) {
-      bugs[i].addEventListener("click", whackBug); 
+      bugs[i].addEventListener("click", whackBug);  
     }
   }
 
