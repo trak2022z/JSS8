@@ -1,5 +1,5 @@
 /*
- * CSE 154 Section Exercise - Whack a Bug
+ * Whack a Bug
  * Handles whacking bugs.
  */
 
